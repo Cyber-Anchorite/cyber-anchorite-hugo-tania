@@ -7,7 +7,7 @@
     </div>
 </header>
 
-{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{ $pages := where .Site.RegularPages "Section" "posts" }}
 
 <section>
     <div class="container">
