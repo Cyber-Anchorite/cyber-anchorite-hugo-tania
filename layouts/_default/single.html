@@ -11,8 +11,11 @@
                             {{ if eq $author nil }}
                               {{ $author = .Site.Params.author }}
                             {{ end }}
-                            By {{ $author  }} | <time>{{ .Date.Format "January 02, 2006" }}</time>
-                            | {{ .ReadingTime }} minutes
+                            作者:  {{ $author }}
+                            {{ if .Params.date }}
+                                | <time>{{ .Date.Format "2006年01月02日" }}</time>
+                            {{ end }}
+                            | 读完需要 {{ .ReadingTime }} 分钟
                         </div>
                         <div class="tags">
                             {{ range (.GetTerms "tags") }}

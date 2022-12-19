@@ -1,10 +1,10 @@
-/* Projects */
+/* topics */
 
-.projects .project:last-of-type {
+.topics .topic:last-of-type {
     border-bottom-width: 0;
 }
 
-.project {
+.topic {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +44,7 @@
 }
 
 @media screen and (min-width: 800px) {
-    .project {
+    .topic {
         border-bottom-width: 0;
 
         h3 {
