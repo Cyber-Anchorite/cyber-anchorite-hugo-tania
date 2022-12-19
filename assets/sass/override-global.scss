@@ -15,9 +15,13 @@ code {
 @media (prefers-color-scheme: dark) {
     :root:not([data-user-color-scheme]) {
         --heading-color: #b1a0ff;
+        --link-color: #6470ad;
+        --link-color-darker: #454e7e;
     }
 }
 
 [data-user-color-scheme='dark'] {
     --heading-color: #b1a0ff;
+    --link-color: #6470ad;
+    --link-color-darker: #454e7e;
 }
